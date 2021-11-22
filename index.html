@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Locations Widget</title>
+</head>
+<body>
+<div class="locations-widget" id="locations-widget-container">
+    <!-- title and icons container -->
+    <div class="inner-title-container">
+        <div class="inner-title">
+            Locations
+        </div>
+        <div class="icons">
+            <div id="inner-icons1"></div>
+            <div id="inner-icons2"></div>
+        </div> 
+    </div>
+    <!-- flag City-country list container with search filter-->
+    <div class="widget-content">
+        <div class="search-container">    <!-- search container ->takes input as city or country name -->
+            <i class="fa fa-search fa-2x icon"></i>
+            <input type="text" id="searchInput" onkeyup="search()" placeholder="Filter locations" title="Enter Location" class="input-field">
+        </div>
+        <div class="clear-all">  <!-- on click this tag all checkbox get cleared means tick get untick-->
+            <a href="#" onclick="clearall()">
+                <i class="fa fa-times"></i>
+                Clear All
+            </a>
+        </div>
+        <div class="list-container">  <!-- List container contains list of flag city-country with initials on right side of container -->
+            <div class="country-container"></div>
+            <div class="dict"></div>
+        </div>
+        <div class="hr-rule"></div>
+    </div>
+</div>
+<script src="index.js"></script>
+</body>
+</html>
